@@ -75,3 +75,8 @@ button {
 button:hover {
   box-shadow: 0px 4px 15px 1px #006be6bf;
 } 
+
+button:focus {
+  background: #FFFFFF;
+  color: #004C5C;
+}
