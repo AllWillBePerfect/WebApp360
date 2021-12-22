@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const exphbs = require("express-handlebars")
 const todoRoutes = require('./routes/todos')
 
-const PORT = 80
+const PORT = 3000
 
 const app = express()
 
