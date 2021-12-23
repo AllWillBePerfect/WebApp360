@@ -13,7 +13,7 @@ body {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    background: url(../../../../Desktop/WebApp360-front/assets/authtest.jpg);
+    background: url(../../assets/authtest.jpg);
 }
 
 input[type="text"] {
