@@ -11,12 +11,9 @@ app.set('view engine', 'ejs')
 app.use(express.static('views'))
 
 app.get('/', (req, res) => {
-    res.render('layouts/main.ejs')
-})
-
-app.get('/login', (req, res) => {
     res.render('layouts/auth.ejs')
 })
+
 
 const urlencodedParser = express.urlencoded({extended: false});
 
