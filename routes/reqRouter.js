@@ -5,11 +5,8 @@ router.get('/', (req, res) => {
     res.render('layouts/main')
 })
 
-router.get('/', (req, res) => {
-    res.render('layouts/auth')
+router.get('/auth', (req, res) => {
+    res.render('views/auth')
 })
-
-
-
 
 module.exports = router
