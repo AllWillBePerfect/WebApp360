@@ -1,6 +1,6 @@
-::-webkit-input-placeholder {color:#0285A0;}
-::-moz-placeholder          {color:#0285A0;}
-:-ms-input-placeholder      {color:#0285A0;}
+::-webkit-input-placeholder {color:#02779b67;}
+::-moz-placeholder          {color:#02779b67;}
+:-ms-input-placeholder      {color:#02779b67;}
 
 * {
     margin: 0;
@@ -24,14 +24,17 @@ input[type="text"] {
     margin-right: auto;
     margin-bottom: 66px;
     font-family: 'Montserrat', sans-serif;
-    color: #0285A0;
+    color: #02779b67;
     font-size: 30px;
     width: 430px;
     height: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   input[type="text"]:focus {
-    outline-color: #eeff00;
+    outline: none;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
   }
 
   .container {
