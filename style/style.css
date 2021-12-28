@@ -17,7 +17,7 @@ body {
 body:after {
     content: "";
     display: block;
-    position: fixed; /* тоже могла бы быть абсолютной */
+    position: fixed; 
     top: 0;
     left: 0;
     height: 100%;
