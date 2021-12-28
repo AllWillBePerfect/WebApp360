@@ -12,7 +12,9 @@ generateAccessToken = (id, roles) => {
 class authController {
     async login(req, res) {
         try {
-            const username = req.body;
+            console.log("100");
+            const username= req.body.username;
+            const password= req.body.password;
             console.log(username, password);
             const user = await User.findOne({username});
             if (!user) {

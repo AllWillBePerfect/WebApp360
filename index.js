@@ -24,16 +24,16 @@ app.use("/auth", authRouter);
 
 app.use(Routes);
 
+// const urlencodedParser = express.urlencoded({extended: false});
 
-
-const urlencodedParser = express.urlencoded({extended: false});
-
-app.post("/auth.html", urlencodedParser, function (req, res) {
-    if(!req.body) return res.sendStatus(400);
-    console.log(req.body);
-    res.send(`${req.body.userName} - ${req.body.userPassword}`);
-    Controller.login(req, res);
-    });
+// app.post("/auth/login", urlencodedParser, function (req, res) {
+//     if(!req.body) return res.sendStatus(400);
+//     console.log(req.body);
+//     res.send(`${req.body.username} - ${req.body.password}`);
+//     console.log("mdaaa", req.body.username);
+//     console.log(req.body.password);
+//     Controller.login(req, res);
+// });         
 
 async function start () {
     try {
