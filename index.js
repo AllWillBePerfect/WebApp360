@@ -1,24 +1,24 @@
 const express = require("express")
 const mongoose = require("mongoose")
-const exphbs = require("express-handlebars")
-const todoRoutes = require('./routes/todos')
 
 const PORT = process.env.PORT || 5000
 
 const app = express()
 
 
-const hbs = exphbs.create({
-    defaultLayout: "main",
-    extname: 'hbs'
-})
 
-app.engine('hbs', hbs.engine)
-app.set('view engine', 'hbs')
-app.set('views', 'views')
+app.set('view engine', 'ejs')
 app.use(express.static('views'))
 
-app.use(todoRoutes)
+app.get('/', (req, res) => {
+    res.render('layouts/main.ejs')
+})
+
+app.get('/login', (req, res) => {
+    res.render('layouts/auth.ejs')
+})
+
+
 
 async function start () {
     try {
