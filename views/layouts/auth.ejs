@@ -11,14 +11,18 @@
     <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="container__input">
-      <input placeholder="      Логин" type="text">
-      <input placeholder="      Пароль" type="text">
+
+    <div class="container">
+    <form method="post" action="/body">
+        <div class="container__input">
+            <input placeholder="Логин" type="text" name="userLogin">
+            <input placeholder="Пароль" type="text" name="userPassword">
+        </div>
+        <div class="container__action">
+            <input type="submit" value="войти" class="button">
+        </div>
+        </form>
     </div>
-    <div class="container__action">
-      <button onclick="window.location.href='index.html'">войти</button>
-    </div>
-  </div>
+
 </body>
 </html>
